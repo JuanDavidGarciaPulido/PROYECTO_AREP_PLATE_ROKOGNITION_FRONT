@@ -1,0 +1,55 @@
+.login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('https://cdn.pixabay.com/photo/2022/06/17/09/50/cctv-surveillance-camera-7267551_1280.jpg'); /* Reemplaza 'imagen.jpg' con la ruta de tu imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+form {
+    background-color: rgba(197, 182, 182, 0.3);
+    padding: 2rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    align-items: center;
+}
+
+label {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+input {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.3rem;
+    width: 100%;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: #4250ca;
+    color: white;
+    border: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #17238b;
+}
+
+.error {
+    color: red;
+    margin-bottom: 1rem;
+}
