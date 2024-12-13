@@ -12,7 +12,7 @@ function Login() {
         e.preventDefault();
         const userProfile = { email, password };
         try {
-            const response = await fetch('http://3.87.155.179:8080/login', {
+            const response = await fetch('http://34.229.218.177:8080/login', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

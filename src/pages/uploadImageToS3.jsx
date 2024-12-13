@@ -8,9 +8,9 @@ function uploadImageToS3(file, setTextResponse, setFormData, setUrlImg, setCarPl
   const s3 = new AWS.S3({
     region: region,
     credentials: {
-      accessKeyId: 'ASIATLNAOGXZHNM35UU7',
-      secretAccessKey: 'jNVFTSUPgTgsv14gdnZRr7teX0zdzg1lH0emnuTM',
-      sessionToken: 'IQoJb3JpZ2luX2VjEAcaCXVzLXdlc3QtMiJIMEYCIQCa5/KYQH9iGoTNyVhFSj9tyszryMX2es/Ew4LE06tCewIhAJHBQJ0NzUxTcvdkJS+d0d0VetcJEbZ9qCaHqdn8OZ5vKrsCCMD//////////wEQABoMMjMwNjU0MDk2ODgyIgwd23pL+YGbMoy7emgqjwLzjhg83QBHxCWJO3RrQKWYHeM2OglaO+tHNwzfVblZf2COXTQLt2yXA1+mGAzkcIoE5VrlHnecu4zxTdtizResL2tE+aca1TtknplH33iWPK8RVnv7Fec5j8jDAMTh5ba3jXnnRJHppHVeQlavptrYs+HDPst+Ug36MgrXHnPKN+khHuUl3TXbX5NDD8ggx2pvSF69lBZW0FabXByEbLPlYZP73hdmJxCI2V/007kXLn6LMT2IDtuMD0CjG0OJeOyqxRosx+CadEk4QYWh80Kl6pLblE1h7UvO3AvGYD66ihm+76mzszQvE8QrfpfVPpc56XbyL9+uBXLoUtltJiyG7K+wYfxFCxomuTV+U7fgMIzq67oGOpwBHSUSTw24XeR1lwfbeczPMB0IujzL++LyYcp6WkIMcFpwFTupcZrpOEaUXTqzT3VckJE5+opYTf6KEBUxyoCcl+1Itn71ZMnZWU8N/atgsxl30kqONb1aKdAP1G6PnvtKCggymO38iR9czhZOfkfAvPqOemlnauXksZCXQJKYTDEdgU/gu13V8/OHppkiXA7O02RfpSh6Z6WmrQOT'
+      accessKeyId: 'ASIATLNAOGXZP6KBEFRN',
+      secretAccessKey: 'wS/Kap6/ZfCCl7VNrPo1zEnuflbsnpV38IyNJL8g',
+      sessionToken: 'IQoJb3JpZ2luX2VjEBIaCXVzLXdlc3QtMiJHMEUCIQCdsHoaMF5hFO40u2VkCnvxio1wb7S2vQmUYwUitClFIgIgMRPCkyDSqUfkskNJf7NUqdA+nuo68/JkCJbV4l4FNY4quwIIy///////////ARAAGgwyMzA2NTQwOTY4ODIiDAcaFOrwbKogLt/8byqPAvJvS0W3WYI1c1HQa7WyTpfukFSqhzwuCbdqwasCrH1wGJOqkq5B8Q8z05ps7WGh+TIfhVIS+nsDFzOyIng+vv62EoGYMjMZzxA2Xp5iCmJSAhG6xnPyoEQrxxIRr23ssJMCoPbo+tKOpbV3QFv36qjF5yyZDwt39X74kQMobMUDELVmaFlxeWMTrfBan99fVRir4qXaYJQdB14xP1H5kl9qmHf0aUkaSe+wbbsjqxtjOwSjkORETlR65JOV8Sq2kXiCUFt1CwegPtSws1TQCZid3fMZBAlvZAUsPKiJH2DFq+6W2jaTh+mtd6C8F+TGlSMCAyq1Mz8HjqEzLQMEkAs33/J4QCDnC6wSi38pvLswuKDuugY6nQGQ5e41Rbfz7xQHcPWJziexCVbAZwgxtdQkrSEL0KVjIfGSka8GjaJPUbdqEG86SuWAN4iWzXDlHTh6pQjVkIEslZjIz0SA796FQHN+UGXosRSjcZACEwxQSS5TaPT70ZS7lhSDoyDzv+n+c3MCPsRtIXV5Bct46Xnt48PJBdZ3sQmPXFRjQcT8Kz8QPMTfiovvtgjrWu61MDFFxyYI'
     }
   });
 
@@ -34,7 +34,7 @@ function uploadImageToS3(file, setTextResponse, setFormData, setUrlImg, setCarPl
           },
           body: params.Key
       };
-      fetch("http://3.87.155.179:8080/check", options)
+      fetch("http://34.229.218.177:8080/check", options)
       .then(response => response.json())
       .then(result => {
           console.log('Solicitud exitosa:', result);

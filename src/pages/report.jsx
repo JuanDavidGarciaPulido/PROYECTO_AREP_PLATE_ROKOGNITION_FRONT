@@ -24,7 +24,7 @@ function Report() {
     }, [])
 
     function fetchDatabase() {
-        fetch("http://3.87.155.179:8080/cars")
+        fetch("http://34.229.218.177:8080/cars")
             .then(response => response.json())
             .then(data => {
                 console.log(data);
@@ -72,7 +72,7 @@ function Report() {
             },
             body: JSON.stringify(data)
         };
-        fetch("http://3.87.155.179:8080/cars", options)
+        fetch("http://34.229.218.177:8080/cars", options)
             .then(result => {
                 console.log('Solicitud exitosa:', result);
                 setOpenModal(false);
